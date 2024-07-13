@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environment
+venv/
+
+# IDE files
+.vscode/
+.idea/
+
+# Secrets
+.secrets.toml
+
+# Logs
+*.log
+
+# Output files
+*.docx
+*.txt
+*.md
+*.pdf
+
+#config files
+config.json
