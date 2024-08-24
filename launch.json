@@ -1,0 +1,69 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "OpenAI - DOCX",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.py",
+            "args": ["./test.pptx", "output.docx", "--ai", "openai", "--format", "docx", "--verbose"],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Watson - TXT",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.py",
+            "args": ["./test.pptx", "output.txt", "--ai", "watson", "--format", "txt", "--verbose"],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Claude - MD",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.py",
+            "args": ["./test.pptx", "output.md", "--ai", "claude", "--format", "md", "--verbose"],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "OpenAI - PDF",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.py",
+            "args": ["./test.pptx", "output.pdf", "--ai", "openai", "--format", "pdf", "--verbose"],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Extract Only",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.py",
+            "args": ["./test.pptx", "output.docx", "--extract-only", "--verbose"],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Summary Only",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.py",
+            "args": ["./test.pptx", "output.docx", "--ai", "openai", "--summary-only", "--verbose"],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Custom Config",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.py",
+            "args": ["./test.pptx", "output.docx", "--ai", "openai", "--config", "custom_config.json", "--verbose"],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Custom Summarization Level",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.py",
+            "args": ["./test.pptx", "output.docx", "--ai", "openai", "--summarization-level", "5", "--verbose"],
+            "console": "integratedTerminal"
+        }
+    ]
+}
